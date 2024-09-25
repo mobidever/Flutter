@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample_flutter/TabView.dart';
 import 'package:sample_flutter/detailscreen.dart';
 import 'package:sample_flutter/loginscreen.dart';
 import 'package:sample_flutter/listscreen.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const LoginScreen(),
       routes: <String,WidgetBuilder>{
+        '/TabViewScreen' : (context) => const TabViewScreen(),
         '/loginScreen' : (context) => const LoginScreen(),
         '/listScreen' : (context) => const ListScreen(),
         '/detailScreen' : (context) => const DetailScreen()
